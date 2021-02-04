@@ -17,15 +17,22 @@ int main()
 
     else if(n>=12&&n<=23.59)
     {
-        cout<<floor(n)<<":"<<(n-floor(n))*100;
+        if(n>=12&&n<13)
+        {
+           cout<<floor(n)<<":"<<(n-floor(n))*100;
         if((n-floor(n))*100==0)
             cout<<"0";
         cout<<" p.m.";
-    }
-    else
-        cout<<"Error";
-    }
-    else
-        cout<<"Error";
+        }
+        else if(n>=13)
+        {
+            cout<<floor(n)-12<<":"<<(n-floor(n))*100;
+        if((n-floor(n))*100==0)
+            cout<<"0";
+        cout<<" p.m.";
+        }
 
+
+    }
+    }
 }

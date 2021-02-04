@@ -5,7 +5,9 @@ int main()
 {
     double n;
     cin>>n;
-    if(n>=0&&n<=11.59)
+    if((floor(n)>=0&&floor(n)<=23)&&((n-floor(n))*100>=0&&(n-floor(n))*100<=59))
+    {
+      if(n>=0&&n<=11.59)
     {
         cout<<floor(n)<<":"<<(n-floor(n))*100;
         if((n-floor(n))*100==0)
@@ -20,5 +22,10 @@ int main()
             cout<<"0";
         cout<<" p.m.";
     }
+    else
+        cout<<"Error";
+    }
+    else
+        cout<<"Error";
 
 }

@@ -8,23 +8,30 @@ int main()
     cin>>n>>m>>t;
     cin>>x;
     y=t;
-    do
+    if(x=='L')
+    {
+
+    }
+    else if(x=='R')
+    {
+         do
     {
         if(y>0)
         {
-            y-=n;
+            y-=m;
             if(y>0)
-                y-=m;
+                y-=n;
             else
             {
-                cout<<"L";break;
+                cout<<"R";break;
             }
-
         }
         else
         {
-           cout<<"R";break;
+           cout<<"L";break;
         }
 
     }while(1);
+    }
+
 }

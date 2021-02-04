@@ -14,7 +14,6 @@ int main()
             cout<<"0";
         cout<<" a.m.";
     }
-
     else if(n>=12&&n<=23.59)
     {
         if(n>=12&&n<13)
@@ -31,8 +30,10 @@ int main()
             cout<<"0";
         cout<<" p.m.";
         }
-
-
     }
+    else
+        cout<<"Error";
     }
+    else
+        cout<<"Error";
 }

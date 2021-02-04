@@ -21,6 +21,4 @@ int main()
         cout<<" p.m.";
     }
 
-    else
-        cout<<"Error";
 }

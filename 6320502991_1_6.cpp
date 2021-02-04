@@ -10,11 +10,28 @@ int main()
     y=t;
     if(x=='L')
     {
+      do
+    {
+        if(y>0)
+        {
+            y-=n;
+            if(y>0)
+                y-=m;
+            else
+            {
+                cout<<"L";break;
+            }
+        }
+        else
+        {
+           cout<<"R";break;
+        }
 
+    }while(1);
     }
     else if(x=='R')
     {
-         do
+            do
     {
         if(y>0)
         {
